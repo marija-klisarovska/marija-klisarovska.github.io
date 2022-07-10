@@ -1,0 +1,117 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right top, #121f17, #112627); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "info";
+    background-color: rgb(255, 249, 249);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 15px;
+
+}
+
+.card-img {
+    grid-area: image;
+    background: url("d3fde5acfbf9e6fe39febe3545569cf2.jpg");
+    background-size: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 10px;
+}
+
+.card-text h2 {
+    color: rgb(0, 101, 126);
+}
+
+.card-text p {
+    color: grey;
+    padding-bottom: 2px;
+}
+
+.card-info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: rgb(0, 101, 126);
+}
+
+.card-info .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+
+.card-info .row1 {
+    font-size: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    color:aliceblue;
+}
+
+.card-info .row2 {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-img2 {
+    grid-area: image;
+    background: url("stranger-things.jpg");
+    background-size: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.card-img3 {
+    grid-area: image;
+    background: url("NUP_188922_0551-1-1014x570.jpg");
+    background-size: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.card-img4 {
+    grid-area: image;
+    background: url("70s.jpg");
+    background-size: cover;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .card {
+  
+  ...
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  }
